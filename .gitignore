@@ -1,0 +1,8 @@
+*.swp
+DS_Store
+.vagrant
+output/
+tmp/
+_site/
+npm-debug.log
+.DS_Store
