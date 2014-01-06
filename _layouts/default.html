@@ -1,0 +1,9 @@
+{% include header.html %}
+
+<div class="container {{ page.class }}">
+  {% if page.header != false %}{% include title.html %}{% endif %}
+  {{ content }}
+</div>
+
+{% include footer.html %}
+

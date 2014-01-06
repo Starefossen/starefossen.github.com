@@ -1,0 +1,16 @@
+---
+layout: frontpage
+title: '@starefossen'
+---
+
+{% for post in site.posts %}
+<div class="post">
+  <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+  <ul class="metadata">
+    <li class="date">{{ post.date | date_to_string }}</li>
+    <li class="author"><a href="#">{{ post.author }}</a></li>
+    <li class="tags">{{ post.tags }}</li>
+  </ul>
+  <div class="excerpt">{{ post.excerpt }}</div>
+</div>
+{% endfor %}

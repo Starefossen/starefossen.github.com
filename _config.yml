@@ -1,0 +1,17 @@
+name: '@starefossen'
+description: 'My personal blog in the internet'
+author: Hans Kristian Flaatten
+url: http://starefossen.github.io
+twitter: '@starefossen'
+repo: https://github.com/starefossen/starefossen.github.com
+ga_id: UA-38558206-2
+encoding: UTF-8
+
+relative_permalinks: false
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: <!--more-->
+markdown: redcarpet
+pygments: true
+timezone: NO
+
+safe: true

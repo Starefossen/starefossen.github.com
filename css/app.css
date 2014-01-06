@@ -1,0 +1,83 @@
+body {
+  padding-bottom: 20px;
+}
+
+body > .container {
+  margin-bottom: 30px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+footer ul {
+  display: table-cell;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+h1, h2, h3, h4 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+h2.glyphicons {
+  padding-left: 35px;
+}
+
+h2.glyphicons::before {
+  margin: 5px 0 0 0;
+}
+
+/* Blog */
+div.post {
+  margin-bottom: 60px;
+}
+
+div.post div.excerpt {
+  font-size: 16px;
+}
+
+div.post ul.metadata {
+  list-style: none outside none;
+  margin-bottom: 10px;
+  padding-left: 0;
+  color: rgb(153, 153, 153);
+}
+
+div.post ul.metadata a {
+  color: rgb(153, 153, 153);
+}
+
+div.post ul.metadata li {
+  display: inline;
+  padding-right: 20px;
+}
+
+/* Syntax Highlighting */
+pre code {
+  background: transparent !important;
+}
+
+pre.highlight {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #FAFAFB;
+}
+
+pre.headers {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+  background-color: #f1f1f1;
