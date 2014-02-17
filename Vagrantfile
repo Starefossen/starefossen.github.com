@@ -35,6 +35,17 @@ Vagrant.configure("2") do |config|
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network :forwarded_port, guest: 4000, host: 3001
 
+  # A Vagrant plugin that helps you reduce the amount of coffee you drink while
+  # waiting for boxes to be provisioned by sharing a common package cache among
+  # similiar VM instances. Kinda like vagrant-apt_cache or this magical snippet
+  # but targetting multiple package managers and Linux distros.
+  if Vagrant.has_plugin?("vagrant-cachier")
+    config.cache.auto_detect = true
+
+    # For VirtualBox, we want to enable NFS for shared folders
+    # config.cache.enable_nfs = true
+  end
+
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network :private_network, ip: "192.168.33.10"
