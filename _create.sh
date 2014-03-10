@@ -2,9 +2,9 @@
 
 clear
 
-printf "layout (default: 'default'): "
+printf "layout (default: 'post'): "
 read layout
-: ${layout:="default"}
+: ${layout:="post"}
 
 printf "date (default: Y-m-d): "
 read date
@@ -14,8 +14,13 @@ printf "title (default: 'untitled'): "
 read title
 : ${title:="untitled"}
 
-printf "category: "
-read category
+printf "tag (default: 'rand'): "
+read tag
+: ${tag:="rand"}
+
+printf "twitter (default: 'starefossen'): "
+read twitter
+: ${twitter:="starefossen"}
 
 printf "published (default: 'true'): "
 read published
@@ -24,7 +29,9 @@ read published
 echo "---
 layout: $layout
 title: $title
-category: $category
+date: $date
+tag: [$tag]
+twitter: $twitter
 published: $published
 ---
 
@@ -33,5 +40,5 @@ published: $published
 
 vim -c "startinsert" + "_posts/"$date"-"$title".md" -c 'w'
 
-jekyll --no-server
+#jekyll --no-server
 
