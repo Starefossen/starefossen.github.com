@@ -7,8 +7,8 @@ $script = <<SCRIPT
 apt-get update
 apt-get install -y make ruby1.9.1-dev
 echo "installing ruby gems"
-gem install jekyll -v 1.2.1
 gem install github-pages
+gem install jekyll -v 1.2.1
 
 echo "cd /vagrant" >> /home/vagrant/.bashrc
 
