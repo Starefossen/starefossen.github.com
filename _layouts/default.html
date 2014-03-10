@@ -1,8 +1,15 @@
-{% include header.html %}
+{% include head.html %}
 
-<div class="container {{ page.class }}">
-  {% if page.header != false %}{% include title.html %}{% endif %}
-  {{ content }}
+<div class="container">
+  {% include header.html %}
+  <div class="row">
+    <div class="col-md-9" role="main">
+      {{ content }}
+    </div>
+    <div class="col-md-3">
+      {% include side.html %}
+    </div>
+  </div>
 </div>
 
 {% include footer.html %}

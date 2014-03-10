@@ -1,17 +1,25 @@
-name: '@starefossen'
-description: 'My personal blog in the internet'
+name: '/dev/rand'
+description: 'Random thoughts on development and Internet'
 author: Hans Kristian Flaatten
 url: http://starefossen.github.io
-twitter: '@starefossen'
 repo: https://github.com/starefossen/starefossen.github.com
 ga_id: UA-38558206-2
-encoding: UTF-8
+
+social: !!omap
+  - img: twitter.png
+    url: https://twitter.com/starefossen
+  - img: github.png
+    url: https://github.com/starefossen
+  - img: linkedin.png
+    url: https://linkedin.com/hans.flaatten
 
 relative_permalinks: false
-permalink: /blog/:year/:month/:day/:title/
+permalink: /post/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
 markdown: redcarpet
 pygments: true
 timezone: NO
+encoding: UTF-8
 
 safe: true
+

@@ -9,7 +9,13 @@ body > .container {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  div.post img {
+    max-width: 100%
   }
 }
 
