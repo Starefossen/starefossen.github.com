@@ -7,8 +7,8 @@ $script = <<SCRIPT
 apt-get update
 apt-get install -y make ruby1.9.1-dev
 echo "installing ruby gems"
+gem install jekyll
 gem install github-pages
-gem install jekyll -v 1.2.1
 
 echo "cd /vagrant" >> /home/vagrant/.bashrc
 
@@ -33,7 +33,7 @@ Vagrant.configure("2") do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network :forwarded_port, guest: 4000, host: 3001
+  config.vm.network :forwarded_port, guest: 4000, host: 3002
 
   # A Vagrant plugin that helps you reduce the amount of coffee you drink while
   # waiting for boxes to be provisioned by sharing a common package cache among
