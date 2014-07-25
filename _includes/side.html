@@ -12,10 +12,12 @@
   </div>
 
   <!-- social -->
-  <div>
+  <div class="social">
     <ul class="list-inline">
     {% for s in site.social %}
-      <li><a href="{{ s.url }}"><img src="/images/{{ s.img }}"></a></li>
+      <li class="{{ s.cls }}">
+        <a href="{{ s.url }}"><img src="/images/{{ s.img }}"></a>
+      </li>
     {% endfor %}
     </ul>
   </div>

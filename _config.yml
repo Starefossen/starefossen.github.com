@@ -6,11 +6,14 @@ repo: https://github.com/starefossen/starefossen.github.com
 ga_id: UA-38558206-2
 
 social: !!omap
-  - img: twitter.png
+  - img: twtter.png
+    cls: twtter
     url: https://twitter.com/starefossen
   - img: github.png
+    cls: github
     url: https://github.com/starefossen
-  - img: linkedin.png
+  - img: lnkedin.png
+    cls: lnkedin
     url: https://linkedin.com/hans.flaatten
 
 relative_permalinks: false

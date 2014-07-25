@@ -23,6 +23,12 @@ body > .container {
   margin-bottom: 0px;
 }
 
+social ul li a {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
 footer ul {
   display: table-cell;
 }
