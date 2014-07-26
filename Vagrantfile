@@ -5,10 +5,22 @@
 $script = <<SCRIPT
 
 apt-get update
-apt-get install -y make ruby1.9.1-dev aspell aspell-en
+apt-get install -y make git curl ruby1.9.1-dev aspell aspell-en
 echo "installing ruby gems"
 gem install jekyll
 gem install github-pages
+
+# NodeJS via NVM
+echo "Installing NVM..."
+export HOME=/home/vagrant
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
+echo "source ~/.nvm/nvm.sh" >> /home/vagrant/.bashrc
+source /home/vagrant/.nvm/nvm.sh
+#nvm install 0.8
+nvm install 0.10
+#nvm install 0.11
+chown -R vagrant:vagrant /home/vagrant/.nvm
+export HOME=/home/root
 
 echo "cd /vagrant" >> /home/vagrant/.bashrc
 
