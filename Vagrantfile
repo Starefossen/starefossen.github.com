@@ -5,7 +5,7 @@
 $script = <<SCRIPT
 
 apt-get update
-apt-get install -y make ruby1.9.1-dev
+apt-get install -y make ruby1.9.1-dev aspell aspell-en
 echo "installing ruby gems"
 gem install jekyll
 gem install github-pages
