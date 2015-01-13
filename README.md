@@ -13,6 +13,18 @@ vagrant ssh
 jekyll serve -w
 ```
 
+### New Post
+
+```shell
+./_create.sh
+```
+
+### Spellchecking
+
+```shell
+aspell -x -c _posts/yyy-mm-dd-post-title.md
+```
+
 ### Push changes
 
 ```shell
