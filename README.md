@@ -5,7 +5,7 @@ My public blog
 
 ### Running locally
 
-Run the website locally over port 3000.
+Run the website locally over port 3002.
 
 ```shell
 vagrant up
