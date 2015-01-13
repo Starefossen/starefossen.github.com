@@ -4,25 +4,28 @@
 # Boostrap Script
 $script = <<SCRIPT
 
+echo "Installing packages..."
 apt-get update
 apt-get install -y make git curl ruby1.9.1-dev aspell aspell-en
-echo "installing ruby gems"
+
+echo "Installing ruby gems..."
 gem install jekyll
+gem install bundler
 gem install github-pages
 
-# NodeJS via NVM
-echo "Installing NVM..."
+echo "Installing node..."
 export HOME=/home/vagrant
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
-echo "source ~/.nvm/nvm.sh" >> /home/vagrant/.bashrc
-source /home/vagrant/.nvm/nvm.sh
-#nvm install 0.8
-nvm install 0.10
-#nvm install 0.11
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+
+source /home/vagrant/.nvm/nvm.sh && nvm install 0.10
 chown -R vagrant:vagrant /home/vagrant/.nvm
 export HOME=/home/root
 
-echo "cd /vagrant" >> /home/vagrant/.bashrc
+echo "Updating .bashrc..."
+cat > /home/vagrant/.bashrc <<EOF
+source ~/.nvm/nvm.sh && nvm use 0.10
+cd /vagrant
+EOF
 
 SCRIPT
 
