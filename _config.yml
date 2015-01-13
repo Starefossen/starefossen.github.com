@@ -1,5 +1,5 @@
-name: '/dev/rand'
-description: 'Random thoughts on development and Internet'
+name: '/dev/random'
+description: 'Random thoughts on development and stuff'
 author: Hans Kristian Flaatten
 url: http://starefossen.github.io
 repo: https://github.com/starefossen/starefossen.github.com
