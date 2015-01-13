@@ -26,6 +26,8 @@ printf "published (default: 'true'): "
 read published
 : ${published:="true"}
 
+slug=`echo $title | tr '[:upper:]' '[:lower:]' | sed -e 's/[^a-z0-0]/-/g'`
+
 echo "---
 layout: $layout
 title: $title
@@ -35,10 +37,7 @@ twitter: $twitter
 published: $published
 ---
 
+" > "_posts/"$date"-"$slug".md"
 
-" > "_posts/"$date"-"$title".md"
-
-vim -c "startinsert" + "_posts/"$date"-"$title".md" -c 'w'
-
-#jekyll --no-server
+vim -c "startinsert" + "_posts/"$date"-"$slug".md" -c 'w'
 
