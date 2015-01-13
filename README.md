@@ -10,7 +10,7 @@ Run the website locally over port 3002.
 ```shell
 vagrant up
 vagrant ssh
-jekyll serve -w
+jekyll serve --host 0.0.0.0 --watch --force_polling
 ```
 
 ### New Post
