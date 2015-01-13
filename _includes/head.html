@@ -9,7 +9,11 @@
     <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
     <link rel="alternate" type="application/rss+xml" title="Recent Blog Posts" href="{{ site.url }}/feed.xml" />
 
-    <title>{{ page.title }}</title>
+    {% if page.title %}
+    <title>$ echo "{{ page.title }}"</title>
+    {% else %}
+    <title>$ cat {{ site.name }}</title>
+    {% endif %}
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/glyphicons.css">
