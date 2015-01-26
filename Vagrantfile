@@ -9,9 +9,8 @@ apt-get update
 apt-get install -y make git curl ruby1.9.1-dev aspell aspell-en
 
 echo "Installing ruby gems..."
-gem install jekyll
 gem install bundler
-gem install github-pages
+bundler install --gemfile=/vagrant/Gemfile
 
 echo "Installing node..."
 export HOME=/home/vagrant

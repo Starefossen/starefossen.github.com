@@ -1,8 +1,10 @@
 *.swp
-DS_Store
-.vagrant
-output/
-tmp/
-_site/
-npm-debug.log
+*.swo
 .DS_Store
+
+npm-debug.log
+Gemfile.lock
+
+.vagrant
+_site/
+
