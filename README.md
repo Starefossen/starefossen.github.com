@@ -1,7 +1,5 @@
-starefossen.github.com
-======================
-
-My public blog
+starefossen.github.io
+=====================
 
 ### Running locally
 
