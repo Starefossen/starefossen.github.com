@@ -75,8 +75,9 @@ global
 ### Profit
 
 I am proud to announce that the Norwegian Trekking Association's website again
-gets an A on Qualys SSL Server Test result page. All our trekking data is still
-belonging to us!
+gets an A on Qualys SSL Server Test [result
+page](http://ssllabs.com/ssltest/analyze.html?d=turistforeningen.no). All our
+trekking data is still belonging to us!
 
 ![Qualys SSL Server Test after HAProxy config update](/uploads/2015/01/26/summary_a.png)
 
