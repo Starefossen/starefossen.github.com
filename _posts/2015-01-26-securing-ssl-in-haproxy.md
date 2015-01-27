@@ -11,7 +11,7 @@ published: true
 suite". It was time to bring back the A on the SSL Server Test result page which
 had recently been downgraded to a B.</p>
 
-![](/uploads/2015/01/26/summary_b.png)
+![Qualys SSL Server Test before HAProxy config update](/uploads/2015/01/26/summary_b.png)
 
 For those who do not know, [Qualys SSL Server
 Test](https://www.ssllabs.com/ssltest/) is THE online SSL analyzer. To say it
@@ -39,7 +39,7 @@ improbable](https://community.qualys.com/blogs/securitylabs/2013/03/19/rc4-in-tl
 there aren't any good workarounds either, that SSL Labs decides not to take any
 actions in their grading algorithm, until now recently.
 
-![](/uploads/2015/01/26/rc4_warning.png)
+![Qualys SSL Server Test RC4 warning](/uploads/2015/01/26/rc4_warning.png)
 
 ### Configuring HAProxy
 
@@ -78,7 +78,7 @@ I am proud to announce that the Norwegian Trekking Association's website again
 gets an A on Qualys SSL Server Test result page. All our trekking data is still
 belonging to us!
 
-![](/uploads/2015/01/26/summary_a.png)
+![Qualys SSL Server Test after HAProxy config update](/uploads/2015/01/26/summary_a.png)
 
 SSL can be intimidating and there is a lot of terminology to get familiar with.
 The certificate authority system is also a hairy mess to get used to. Thankfully
