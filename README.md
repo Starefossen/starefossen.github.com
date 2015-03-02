@@ -3,12 +3,12 @@ starefossen.github.io
 
 ### Running locally
 
-Run the website locally over port 3002.
+Run the website locally over port `4000`.
 
 ```shell
 vagrant up
 vagrant ssh
-jekyll serve --host 0.0.0.0 --watch --force_polling
+jekyll serve --H 0.0.0.0 -P 4000 --watch --force_polling
 ```
 
 ### New Post
