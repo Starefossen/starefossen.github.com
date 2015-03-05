@@ -5,24 +5,23 @@
 $script = <<SCRIPT
 
 echo "Installing packages..."
-apt-get update
-apt-get install -y make git curl ruby1.9.1-dev aspell aspell-en
+apt-get update -y
+apt-get install -y build-essential git curl ruby1.9.1-dev aspell aspell-en
 
 echo "Installing ruby gems..."
-gem install bundler
-bundler install --gemfile=/vagrant/Gemfile
+gem install jekyll
 
 echo "Installing node..."
 export HOME=/home/vagrant
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
-source /home/vagrant/.nvm/nvm.sh && nvm install 0.10
+source /home/vagrant/.nvm/nvm.sh && nvm install iojs
 chown -R vagrant:vagrant /home/vagrant/.nvm
 export HOME=/home/root
 
 echo "Updating .bashrc..."
 cat > /home/vagrant/.bashrc <<EOF
-source ~/.nvm/nvm.sh && nvm use 0.10
+source ~/.nvm/nvm.sh && nvm use iojs
 cd /vagrant
 EOF
 
@@ -79,7 +78,7 @@ Vagrant.configure(2) do |config|
     # vb.gui = true
 
     # Customize the amount of memory on the VM:
-    vb.memory = "256"
+    vb.memory = "512"
   end
   #
   # View the documentation for the provider you are using for more
