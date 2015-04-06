@@ -7,9 +7,9 @@ twitter: starefossen
 published: true
 ---
 
-<p class="lead">Finally, the next ticket on Jira said "Disable RC4 from cipher
-suite". It was time to bring back the A on the SSL Server Test result page which
-had recently been downgraded to a B.</p>
+Finally, the next ticket on Jira said "Disable RC4 from cipher suite". It was
+time to bring back the A on the SSL Server Test result page which had recently
+been downgraded to a B.
 
 ![Qualys SSL Server Test before HAProxy config update](/uploads/2015/01/26/summary_b.png)
 
