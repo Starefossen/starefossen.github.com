@@ -52,6 +52,13 @@ div.post {
   margin-bottom: 60px;
 }
 
+div.post p:first-child {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
 div.post div.excerpt {
   font-size: 16px;
   line-height: 1.6;
