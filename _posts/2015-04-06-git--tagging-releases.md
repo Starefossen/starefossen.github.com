@@ -31,12 +31,12 @@ code without digging around and looking for something which indicates a release.
 Simply checkout the tag to a new branch by `git checkout -b version2 v2.0.1` to
 get on with it.
 
+![github project releases](/uploads/2015/04/06/releases.png)
+
 Secondly, if you are using GitHub your tags will automatically show up as
 `releases` which your users can download, and you can annotate by adding extra
 information to in [GitHub Flavored
 Markdown](https://help.github.com/articles/github-flavored-markdown/).
-
-![](/uploads/2015/04/06/releases.png)
 
 ### Automate all the things!
 
