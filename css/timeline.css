@@ -142,7 +142,8 @@
     margin-bottom: 0;
 }
 
-.timeline-body > p + p {
+.timeline-body > p + p,
+.timeline-body > img {
     margin-top: 5px;
 }
 
