@@ -27,9 +27,10 @@ nosidebar: true
         {% endif %}
       </div>
 
-      {% if event.body %}
-      <div class="timeline-body"><p>{{ event.body }}</p></div>
-      {% endif %}
+      <div class="timeline-body">
+        {% if event.body %}<p>{{ event.body }}</p>{% endif %}
+        {% if event.image %}<img src="{{ event.image }}" class="img-responsive img-rounded" alt="{{ event.title }}">{% endif %}
+      </div>
     </div>
   </li>
 {% endfor %}</ul>
