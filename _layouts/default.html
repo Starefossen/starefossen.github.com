@@ -1,16 +1,23 @@
 {% include head.html %}
 
+{% if page.nosidebar %}
+  {% assign main = 12 %}
+  {% assign side = 12 %}
+{% else %}
+  {% assign main = 9 %}
+  {% assign side = 3 %}
+{% endif %}
+
 <div class="container">
   {% include header.html %}
   <div class="row">
-    <div class="col-md-9" role="main">
+    <div class="col-md-{{ main }}" role="main">
       {{ content }}
     </div>
-    <div class="col-md-3">
+    <div class="col-md-{{ side }}">
       {% include side.html %}
     </div>
   </div>
 </div>
 
 {% include footer.html %}
-

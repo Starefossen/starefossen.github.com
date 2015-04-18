@@ -1,0 +1,39 @@
+---
+layout: default
+title: cat ~/.bash_history
+nosidebar: true
+navigation: Timeline
+---
+
+<ul class="timeline">{% for event in site.data.timeline %}
+  {% assign class = '' %}
+
+  {% if event.position == "right" %}
+    {% assign class = ' class="timeline-inverted"' %}
+  {% endif %}
+
+  <li{{ class }}>
+    <div class="timeline-badge {{ event.badge.color }}">
+      <i class="glyphicon glyphicon-{{ event.badge.icon }}"></i>
+    </div>
+
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <h4 class="timeline-title">{{ event.title }}</h4>
+
+        {% if event.timestamp %}
+        <p><small class="text-muted">
+          <i class="glyphicon glyphicon-time"></i>
+          {{ event.timestamp | date: "%B %Y" }}
+        </small></p>
+        {% endif %}
+      </div>
+
+      <div class="timeline-body">
+        {% if event.body %}<p>{{ event.body }}</p>{% endif %}
+        {% if event.image %}<img src="{{ event.image }}" class="img-responsive img-rounded" alt="{{ event.title }}">{% endif %}
+      </div>
+    </div>
+  </li>
+{% endfor %}</ul>
+<!-- Source http://www.bootply.com/5uU1U1UYS5 -->

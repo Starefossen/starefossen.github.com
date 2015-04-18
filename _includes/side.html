@@ -2,10 +2,10 @@
   <!-- resources -->
   <div>
     <h3>Resources</h3>
-    <ul class="list-unstyled">
+    <ul class="list-inline">
     {% for p in site.pages %}
-      {% if p.navnbar %}
-      <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+      {% if p.navigation %}
+      <li><a href="{{ p.url }}">{{ p.navigation }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>

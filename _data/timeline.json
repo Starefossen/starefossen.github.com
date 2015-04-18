@@ -1,0 +1,103 @@
+[{
+  "badge": {
+    "color": "info",
+    "icon": "home"
+  },
+  "position": "right",
+  "timestamp": 1426201200,
+  "title": "Joined io.js Docker Working Group",
+  "body": "io.js Docker Working Group is responsible for maintaining the
+  official Docker Image for io.js.",
+  "url": "https://iojs.org",
+  "image": "/images/timeline/iojs.png"
+},{
+  "badge": {
+    "color": "info",
+    "icon": "home"
+  },
+  "position": "right",
+  "timestamp": 1423263600,
+  "title": "Joined io.js Norway",
+  "body": "io.js Norway is responsible for managing the Norwegian io.js
+  community and translating official io.js documents and publications to
+  Norwegian."
+},{
+  "badge": {
+    "color": "default",
+    "icon": "heart"
+  },
+  "timestamp": 1412546400,
+  "title": "Became a father!"
+},{
+  "badge": {
+    "color": "success",
+    "icon": "bullhorn"
+  },
+  "position": "right",
+  "timestamp": 1401832800,
+  "title": "Released s3-uploader for Node.JS",
+  "body": "Easy and conenient resize, rename, and upload images with multiple
+  versions to AWS S3.",
+  "url": "https://github.com/Turistforeningen/node-s3-uploader"
+},{
+  "badge": {
+    "color": "info",
+    "icon": "certificate"
+  },
+  "position": "right",
+  "timestamp": 1387234800,
+  "title": "Recieved MongoDB Certification",
+  "body": "MongoDB is an open-source document database that provides high
+  performance, high availability, and automatic scaling.",
+  "url": "https://www.mongodb.org",
+  "image": "/images/timeline/mongodb.png"
+},{
+  "badge": {
+    "color": "default",
+    "icon": "chevron-left"
+  },
+  "timestamp": 1385852400,
+  "title": "Started learning Docker (v0.6)",
+  "body": "Docker is an open-source project that automates the deployment of
+  applications inside software containers, by providing an additional layer of
+  abstraction and automation of operating-system-level virtualization on
+  Linux.",
+  "url": "https://www.docker.com"
+},{
+  "badge": {
+    "color": "success",
+    "icon": "bullhorn"
+  },
+  "position": "right",
+  "timestamp": 1372024800,
+  "title": "Released Routing for Leaflet",
+  "body": "Leaflet.Routing is a routing controller for the popular Leaflet
+  mapping framework. The module provides an intuitive interface for routing
+  paths between waypoints using any user specified routing service.",
+  "url": "https://github.com/Turistforeningen/leaflet-routing"
+},{
+  "badge": {
+    "color": "default",
+    "icon": "chevron-left"
+  },
+  "timestamp": 1368136800,
+  "title": "Started learning Node.JS (v0.8)",
+  "body": "Node.js provides an event-driven architecture and a non-blocking I/O
+  API that optimizes an application's throughput and scalability. These
+  technologies are commonly used for real-time web applications.",
+  "url": "https://nodejs.org",
+  "image": "/images/timeline/node.png"
+},{
+  "badge": {
+    "color": "info",
+    "icon": "home"
+  },
+  "position": "right",
+  "timestamp": 1328050800,
+  "title": "Joined UT.no Project Team",
+  "body": "Hit the trails with UT.no, a collaboration between the Norwegian
+  Broadcasting Corporation (NRK) and the Norwegian Trekking Association (DNT).
+  Search the map and find cabins, leisure activities, and great tips in
+  Norwegian mountains.",
+  "url": "http://www.ut.no"
+}]
