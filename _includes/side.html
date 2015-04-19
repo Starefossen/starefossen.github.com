@@ -5,7 +5,7 @@
     <ul class="list-inline">
     {% for p in site.pages %}
       {% if p.navigation %}
-      <li><a href="{{ p.url }}">{{ p.navigation }}</a></li>
+        <li><a href="{{ p.url }}">{{ p.navigation }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
@@ -15,8 +15,10 @@
   <div class="social">
     <ul class="list-inline">
     {% for s in site.social %}
-      <li class="{{ s.cls }}">
-        <a href="{{ s.url }}"><img src="/images/{{ s.img }}"></a>
+      <li>
+        <a href="{{ s.url }}">
+          <i class="fa fa-{{ s.icon }}"></i><br>{{ s.icon }}
+        </a>
       </li>
     {% endfor %}
     </ul>
