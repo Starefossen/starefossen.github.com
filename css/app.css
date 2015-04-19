@@ -19,10 +19,20 @@ body > .container {
   margin-bottom: 0px;
 }
 
-social ul li a {
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
+.social ul li {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.social ul li a,
+.social ul li a:hover {
+  color: #2C3E50;
+  text-decoration: none;
+}
+
+.social ul li a i {
+  font-size: 30px;
 }
 
 footer ul {
