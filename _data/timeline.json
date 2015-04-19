@@ -62,7 +62,8 @@
   applications inside software containers, by providing an additional layer of
   abstraction and automation of operating-system-level virtualization on
   Linux.",
-  "url": "https://www.docker.com"
+  "url": "https://www.docker.com",
+  "image": "/images/timeline/docker.png"
 },{
   "badge": {
     "color": "success",
