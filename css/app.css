@@ -39,6 +39,12 @@ body > .container {
   padding-left: 20px;
 }
 
+.license {
+  color: #999;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
 footer ul {
   display: table-cell;
 }
