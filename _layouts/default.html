@@ -16,6 +16,21 @@
     </div>
     <div class="col-md-{{ side }}">
       {% include side.html %}
+
+      {% for panel in page.facts %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{ panel.title }}</h3>
+          </div>
+          <div class="panel-body">
+            <ul>{% for fact in panel.facts %}
+              <li>{{ fact }}</li>
+            {% endfor %}</ul>
+
+            {% if panel.source %}Source: {{ panel.source }}{% endif %}
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
