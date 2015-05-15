@@ -35,6 +35,10 @@ body > .container {
   font-size: 30px;
 }
 
+.panel ul {
+  padding-left: 20px;
+}
+
 footer ul {
   display: table-cell;
 }
