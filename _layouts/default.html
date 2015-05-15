@@ -26,6 +26,8 @@
             <ul>{% for fact in panel.facts %}
               <li>{{ fact }}</li>
             {% endfor %}</ul>
+
+            {% if panel.source %}Source: {{ panel.source }}{% endif %}
           </div>
         </div>
       {% endfor %}
