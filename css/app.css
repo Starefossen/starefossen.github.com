@@ -19,6 +19,10 @@ body > .container {
   margin-bottom: 0px;
 }
 
+.sidebar {
+  margin-bottom: 20px;
+}
+
 .social ul li {
   text-align: center;
   font-size: 15px;
