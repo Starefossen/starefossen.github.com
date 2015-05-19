@@ -13,6 +13,8 @@ good open source maintainer is keeping your git history in good shape.
 
 ![git history with properly tagged releases](/uploads/2015/04/06/history.png)
 
+<!--more-->
+
 ### What are git tags?
 
 A `tag` is a special point in your git history. A tag does not necessary have to

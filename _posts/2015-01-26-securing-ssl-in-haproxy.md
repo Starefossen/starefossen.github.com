@@ -13,6 +13,8 @@ been downgraded to a B.
 
 ![Qualys SSL Server Test before HAProxy config update](/uploads/2015/01/26/summary_b.png)
 
+<!--more-->
+
 For those who do not know, [Qualys SSL Server
 Test](https://www.ssllabs.com/ssltest/) is THE online SSL analyzer. To say it
 mildly, these guys knows SSL, with all it's quarks and all! All you have to do
