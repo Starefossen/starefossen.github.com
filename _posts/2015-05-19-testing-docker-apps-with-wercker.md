@@ -29,8 +29,9 @@ facts:
 ---
 
 Wercker is a free and hosted continuous delivery platform with a lot of
-flexibility.  Wercker offers everything you expect from a CI service, and
-recently announced full support for the Docker container runtime.
+flexibility.  Wercker offers everything you would expect from a modern CI
+service, and they recently announced full support for the Docker container
+runtime.
 
 ![Wercker Promo](/uploads/2015/05/19/wercker.png "Wercker Promo")
 
