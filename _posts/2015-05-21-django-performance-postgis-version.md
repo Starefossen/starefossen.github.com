@@ -8,14 +8,20 @@ published: true
 facts:
   - title: Norwegian Trekking Association (DNT)
     facts:
-      - foo
-      - bar
-      - baz
+      - Norway's largest outdoor life organization.
+      - 250.000 members across 57 local member organisations.
+      - Maintain a network of 20,000 km marked foot trails and 7000 km of
+        branch-marked ski tracks.
+      - DNT activities are based on extensive volunteer work spanning more
+        than 175,000 work hours each year.
     source: dnt.no
   - title: Django
     facts:
-      - foo
-      - bar
+      - Free and open source web application framework, written in Python.
+      - Emphasizes reusability and "pluggability" of components, rapid
+        development, and the principle of don't repeat yourself.
+      - Initial release July 21th 2005.
+      - Maintained by the Django Software Foundation (DSF).
     source: djangoproject.com
 ---
 
