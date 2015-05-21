@@ -49,7 +49,7 @@ region).
 ![Pre Response Time](/uploads/2015/05/21/response_pre.png "Pre Response Time")
 
 Other than that we had fairly little data to work with so we decided to log all
-Postgres queries longer than 200 ms over the weekend using the [
+Postgres queries longer than 300 ms over the weekend using the [
 log\_min\_duration\_statement](http://www.postgresql.org/docs/current/static/runtime-config-logging.html#GUC-LOG-STATEMENT)
 method as suggested in [this Postgres wiki
 page](https://wiki.postgresql.org/wiki/Logging_Difficult_Queries) on logging
