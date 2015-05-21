@@ -58,9 +58,9 @@ entirely correct, and subsequently *all* queries were logged. 😁  Oops!
 
 ## Step 2 - Analyze
 
-When we returned to work next Monday we had 10 GB of query logs to sift through
-😥.  [Postgres System Impact report (pgsi)](https://bucardo.org/wiki/Pgsi) to the
-rescue!
+When we returned to work next Monday we had 10 GB of query logs to sift through.
+😥.  A few days later the log file had doubled in size!  [Postgres System Impact
+report (pgsi)](https://bucardo.org/wiki/Pgsi) to the rescue!
 
 ```
 perl pgsi.pl --file=postgresql-head.log > pg_analyze.html
