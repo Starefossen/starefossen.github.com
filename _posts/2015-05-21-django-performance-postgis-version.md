@@ -9,7 +9,7 @@ facts:
   - title: Norwegian Trekking Association (DNT)
     facts:
       - Norway's largest outdoor life organization.
-      - 250.000 members across 57 local member organisations.
+      - 250.000 members across 57 local member organizations.
       - Maintain a network of 20,000 km marked foot trails and 7000 km of
         branch-marked ski tracks.
       - DNT activities are based on extensive volunteer work spanning more
@@ -49,17 +49,18 @@ region).
 ![Pre Response Time](/uploads/2015/05/21/response_pre.png "Pre Response Time")
 
 Other than that we had fairly little data to work with so we decided to log all
-Postgres queries longer than 200 ms over the weekend using the [
+Postgres queries <del>longer than 300 ms</del> over the weekend using the [
 log\_min\_duration\_statement](http://www.postgresql.org/docs/current/static/runtime-config-logging.html#GUC-LOG-STATEMENT)
 method as suggested in [this Postgres wiki
 page](https://wiki.postgresql.org/wiki/Logging_Difficult_Queries) on logging
-difficult queries.
+difficult queries. **Update:** We later learned that our configuration was not
+entirely correct, and subsequently *all* queries were logged. 😁  Oops!
 
 ## Step 2 - Analyze
 
-When we returned to work next Monday we had 10 GB of query logs to sift through
-😥.  [Postgres System Impact report (pgsi)](https://bucardo.org/wiki/Pgsi) to the
-rescue!
+When we returned to work next Monday we had 10 GB of query logs to sift through.
+😥.  A few days later the log file had doubled in size!  [Postgres System Impact
+report (pgsi)](https://bucardo.org/wiki/Pgsi) to the rescue!
 
 ```
 perl pgsi.pl --file=postgresql-head.log > pg_analyze.html
