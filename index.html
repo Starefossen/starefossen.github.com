@@ -14,6 +14,9 @@ layout: default
       {{ post.author }}
     {% endif %}
     </li>
+    <li class="comments">
+      <a href="{{ post.url }}#disqus_thread">Comments</a>
+    </li>
     <li class="tags">
       {% for tag in post.tags %}
       <span class="label label-primary">{{ tag }}</span>
