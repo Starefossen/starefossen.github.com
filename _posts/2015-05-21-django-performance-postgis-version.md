@@ -9,7 +9,7 @@ facts:
   - title: Norwegian Trekking Association (DNT)
     facts:
       - Norway's largest outdoor life organization.
-      - 250.000 members across 57 local member organisations.
+      - 250.000 members across 57 local member organizations.
       - Maintain a network of 20,000 km marked foot trails and 7000 km of
         branch-marked ski tracks.
       - DNT activities are based on extensive volunteer work spanning more
