@@ -6,8 +6,8 @@ repo: https://github.com/starefossen/starefossen.github.com
 ga_id: UA-38558206-2
 
 license:
-    title: Creative Commons CC-BY license
-    url: http://creativecommons.org/licenses/by/3.0/us/
+    title: Creative Commons CC BY 4.0 license
+    url: https://creativecommons.org/licenses/by/4.0/
 
 social: !!omap
   - icon: twitter
