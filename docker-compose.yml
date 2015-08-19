@@ -9,9 +9,3 @@ blog:
     environment:
         - VIRTUAL_HOST=blog.starefossen.privat
         - VIRTUAL_PORT=4000
-
-aspell:
-    image: starefossen/aspell
-    entrypoint: aspell
-    volumes:
-        - _posts:/_posts
