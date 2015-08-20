@@ -6,6 +6,7 @@ blog:
     volumes:
         - .:/usr/src/app
     command: jekyll serve --watch --force_polling -H 0.0.0.0 -P 4000
+    env_file: .env
     environment:
         - VIRTUAL_HOST=blog.starefossen.privat
         - VIRTUAL_PORT=4000

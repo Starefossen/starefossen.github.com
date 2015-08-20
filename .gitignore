@@ -1,10 +1,2 @@
-*.swp
-*.swo
-.DS_Store
-
-npm-debug.log
-Gemfile.lock
-
-.vagrant
-_site/
-
+.env
+_site
