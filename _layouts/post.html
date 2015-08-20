@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
   <ul class="metadata">
-    <li class="date">{{ page.date | date_to_string }}</li>
+    <li class="date">{{ page.date | date_to_string }}</li>
     <li class="author">
     {% if page.twitter %}
       <a href="https://twitter.com/{{ page.twitter }}">@{{ page.twitter }}</a>
@@ -21,7 +21,8 @@ layout: default
     {% endfor %}
     </li>
   </ul>
-  <div class="excerpt">{{ content }}</div>
+
+  <div class="excerpt">{{ content }}</div>
 
   <hr>
 
