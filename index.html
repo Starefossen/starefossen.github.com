@@ -6,7 +6,7 @@ layout: default
 <div class="post">
   <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
   <ul class="metadata">
-    <li class="date">{{ post.date | date_to_string }}</li>
+    <li class="date">{{ post.date | date_to_string }}</li>
     <li class="author">
     {% if post.twitter %}
       <a href="https://twitter.com/{{ post.twitter }}">@{{ post.twitter }}</a>
@@ -23,7 +23,7 @@ layout: default
       {% endfor %}
     </li>
   </ul>
-  <div class="excerpt">{{ post.excerpt }}</div>
+  <div class="excerpt">{{ post.excerpt }}</div>
 </div>
 {% endfor %}
 

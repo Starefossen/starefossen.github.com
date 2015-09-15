@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
+
+    <!-- atom feed -->
+    {% feed_meta %}
+
     <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
-    <link rel="alternate" type="application/rss+xml" title="Recent Blog Posts" href="{{ site.url }}/feed.xml" />
 
     {% if page.title %}
     <title>$ echo "{{ page.title }}"</title>
