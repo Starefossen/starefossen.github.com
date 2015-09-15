@@ -2,7 +2,6 @@ name: '/dev/random'
 description: 'Random thoughts on development and stuff'
 author: Hans Kristian Flaatten
 url: https://starefossen.github.io
-repo: https://github.com/starefossen/starefossen.github.com
 ga_id: UA-38558206-2
 
 license:
