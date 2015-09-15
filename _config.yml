@@ -28,6 +28,7 @@ encoding: UTF-8
 repository: Starefossen/starefossen.github.com
 
 gems:
+- jekyll-feed
 - jekyll-github-metadata
 - jekyll-mentions
 - jekyll-redirect-from
