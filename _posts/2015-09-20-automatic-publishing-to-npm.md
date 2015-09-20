@@ -43,7 +43,7 @@ The  `npm publish` (and more recently `npm adduser`) commands requires some user
 interaction to type in user credentials. This makes it problematic for use on
 servers since there is no user there to type in the username and password.
 
-Becuase of this limitation some CI servers offers plugins or addons to make the
+Because of this limitation some CI servers offers plugins or addons to make the
 integration with npm easier for maintainers.
 
 ### npm publish for Travis CI
