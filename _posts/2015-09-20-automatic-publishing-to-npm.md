@@ -11,7 +11,7 @@ If you are actively maintaining more than a couple of packages in the npm
 registry this will be a life saver for you; automatically publish new versions of
 your packages directly from your CI server 📡
 
-![Wercker CI deploys to npm](/uploads/2015/09/20/wercker-deploys.png)
+![Automatic publish successfull builds](/uploads/2015/09/20/auto-publish.gif)
 
 <!--more-->
 
