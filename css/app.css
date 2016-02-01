@@ -110,6 +110,15 @@ div.post ul.metadata li {
 
 div.post img {
   max-width: 100%;
+  padding: 3px;
+  border: 1px solid #d8d8d8;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+div.post img.emoji {
+  padding: 0;
+  border: 0;
 }
 
 /* Syntax Highlighting */
