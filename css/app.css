@@ -76,6 +76,10 @@ div.post {
   margin-bottom: 60px;
 }
 
+div.post p {
+  text-align: justify;
+}
+
 div.post p:first-child {
   margin-bottom: 20px;
   font-size: 21px;
