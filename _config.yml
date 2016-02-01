@@ -19,7 +19,6 @@ social: !!omap
   - icon: linkedin
     url: https://linkedin.com/hans.flaatten
 
-relative_permalinks: false
 permalink: /post/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
 
