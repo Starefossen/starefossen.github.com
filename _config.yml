@@ -26,6 +26,10 @@ excerpt_separator: <!--more-->
 markdown: kramdown
 highlighter: rouge
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 timezone: NO
 encoding: UTF-8
 
