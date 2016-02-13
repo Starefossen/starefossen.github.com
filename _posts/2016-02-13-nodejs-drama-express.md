@@ -17,7 +17,7 @@ may be facing a new beginning!
 
 ![Screenshot of IBM's acquisition of StrongLoop in TechCrunch](/uploads/2016/02/13/techcrunch.png)
 
-<!-- more -->
+<!--more-->
 
 ## Transferred to StrongLoop
 
