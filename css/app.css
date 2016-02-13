@@ -72,6 +72,15 @@ h2.glyphicons::before {
 }
 
 /* Blog */
+a.user-mention {
+  font-weight: bold;
+  color: #333;
+}
+
+a.user-mention:hoover {
+  color: #333;
+}
+
 div.post {
   margin-bottom: 60px;
 }
