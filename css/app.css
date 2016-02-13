@@ -89,7 +89,7 @@ div.post p {
   text-align: justify;
 }
 
-div.post p:first-child {
+div.excerpt > p:first-child {
   margin-bottom: 20px;
   font-size: 21px;
   font-weight: 200;
