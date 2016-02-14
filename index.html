@@ -25,7 +25,7 @@ layout: default
   </ul>
 
   {% if forloop.index <= 5 %}
-    <div class="excerpt">
+    <div class="excerpt{% if forloop.index > 1 %} no-image{% endif %}">
       {{ post.excerpt }}
     </div>
   {% endif %}

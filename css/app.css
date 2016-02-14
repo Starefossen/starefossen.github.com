@@ -96,6 +96,10 @@ div.excerpt > p:first-child {
   line-height: 1.4;
 }
 
+div.excerpt.no-image > p:nth-child(n + 2) {
+  display: none;
+}
+
 div.post div.excerpt {
   font-size: 16px;
   line-height: 1.6;
