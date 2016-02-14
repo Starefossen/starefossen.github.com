@@ -23,7 +23,11 @@ layout: default
       {% endfor %}
     </li>
   </ul>
-  <div class="excerpt">{{ post.excerpt }}</div>
+
+  {% if forloop.index <= 5 %}
+    <div class="excerpt">
+      {{ post.excerpt }}
+    </div>
+  {% endif %}
 </div>
 {% endfor %}
-
