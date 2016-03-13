@@ -92,28 +92,71 @@ indicate the various systems that could be affected.
 ![GitHub Issue Labels](/uploads/2016/03/11/labels.png)
 
 Closing the issues would resolve the incident and return the status page to it's
-normal green status.
+normal green status. This way we would only need to log incidents to GitHub and
+not worry about some other tool or system to manage this.
+
+## Gluing it all together
+
+Now that we have both the indivudual status checks and incident messages we can
+start writing some pseudocode for how the status page should work. As you can
+see from the code below, the whole page is fairly comprehensible.
+
+```
+# get checks and messages
+checks = http.get("https://status.app.dnt.no/api/v1/checks")
+messages = http.get("https://api.github.com/repos/Turistforeningen/status/issues")
+
+alert = null
+
+# add messages to page
+for message in messages
+  if message.status is not "resolved"
+    alert = message.title
+
+  addMessage(message.title, message.body, message.status)
+
+# add status checks to page
+for check in checks
+  if check.status is not "up" and alert is null
+    alert = check.name + "is down"
+
+  addCheck(check.name, check.status, check.tag)
+
+# show alert header message
+showAlertMessage(alert)
+```
+[`script.js`]: https://github.com/Turistforeningen/status/blob/gh-pages/assets/js/script.js
+
+The client side implementation for the status page can be found in [`script.js`]
+in the repository up on GitHub. Except from the asyncronous nature of JavaScript
+as well as the DOM manipulation necessary for adding new elemenets to a HTML
+page; you should be able to see the familiarity with the above pseudocode.
+
+If you open up your dev tools on the status page you will see the two XHR
+request happening before the checks and messages are displayed on the page.
+
+![HTTP XHR](/uploads/2016/03/11/http-xhr.gif)
 
 ## The Power of GitHub Pages
 
 [GitHub Pages]: https://help.github.com/articles/what-are-github-pages/
-
-All we needed now was a reliable place to host the status page static files
-(`index.html`, JavaScript, and CSS). Since the source code was up on GitHub and
-we have had good experience with [GitHub Pages] it was the obvious decision.
-
-```
-> git push -u origin gh-pages
-```
-
 [status.dnt.no]: http://status.dnt.no
 [MIT license]: https://github.com/Turistforeningen/status/blob/gh-pages/LICENSE
 
-By adding a `CNAME` file with we could use a custom domain like [status.dnt.no].
-The complete source code is up at [Turistforeningen/status] and licensed under
-the [MIT license].
+The last piece of the puzzle was a reliable place to host the static files
+necessary for the status page to function. An `index.html`, some JavaScript, and
+little bit of CSS. Since the source code was already hosted on GitHub, and we
+have had good experience with using [GitHub Pages] in the past it was the
+obvious decision. This very blog you are reading is hosted on GitHub Pages as
+well.
 
 * **Also read:** [Jekyll 3 and GitHub Pages](/post/2016/02/11/jekyll-3-on-github-pages/)
+
+Just push the code to a branch named `gh-pages` and let GitHub do the rest! We
+even could customize the domain name simply by adding a `CNAME` file with the
+desired domain name – [status.dnt.no]. The complete source code for our new
+status page is up at [Turistforeningen/status] and licensed under the [MIT
+license].
 
 ## Future Work
 
