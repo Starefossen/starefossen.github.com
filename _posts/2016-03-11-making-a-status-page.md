@@ -77,6 +77,7 @@ type tags to group different checks together; `app`, `service`, and `payment`.
 ## Incident Messages
 
 [Turistforeningen/status]: https://github.com/Turistforeningen/status
+[GitHub API]: https://developer.github.com/v3/
 
 The next thing we would like for our status page was the ability to post
 messages about various incidents. We wanted to reuse existing infrastructure as
@@ -84,7 +85,7 @@ much as possible and we know GitHub had an awesome API, that could even be used
 without any user authentication.
 
 We could simply create issues directly in the [Turistforeningen/status] issue
-tracker on GitHub and fetch them using the GitHub API. This was just what we
+tracker on GitHub and fetch them using the [GitHub API]. This was just what we
 needed! We added some labels to indicate outage status levels and others to
 indicate the various systems that could be affected.
 
