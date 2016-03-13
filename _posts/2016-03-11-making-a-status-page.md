@@ -66,12 +66,13 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-Since we have more checks than what we would like, or should, expose on a status
-page we needed to organize our existing checks. Pingdom had the solution – tags.
-We tagged all checks we would like to expose with `public` as well as what kind
-of check this was `app`, `service`, or `payment`.
+We had more checks than we would like, or should, expose on the status page -
+they needed to be organized. Pingdom had the solution – organization bytags. We
+tagged all checks we would like to show up on the status page with `public`.
+From the API we could now filter using `?tags=public`. We also created service
+type tags to group different checks together; `app`, `service`, and `payment`.
 
-![Pingdom Check Tags](/uploads/2016/03/11/tags.png)
+![Pingdom Check Tags](/uploads/2016/03/11/tags.gif)
 
 ## Incident Messages
 
