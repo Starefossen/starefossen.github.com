@@ -67,7 +67,7 @@ Content-Type: application/json; charset=utf-8
 ```
 
 We had more checks than we would like, or should, expose on the status page -
-they needed to be organized. Pingdom had the solution – organization bytags. We
+they needed to be organized. Pingdom had the solution – organization by tags. We
 tagged all checks we would like to show up on the status page with `public`.
 From the API we could now filter using `?tags=public`. We also created service
 type tags to group different checks together; `app`, `service`, and `payment`.
@@ -97,7 +97,7 @@ not worry about some other tool or system to manage this.
 
 ## Gluing it all together
 
-Now that we have both the indivudual status checks and incident messages we can
+Now that we have both the individual status checks and incident messages we can
 start writing some pseudocode for how the status page should work. As you can
 see from the code below, the whole page is fairly comprehensible.
 
@@ -128,8 +128,8 @@ showAlertMessage(alert)
 [`script.js`]: https://github.com/Turistforeningen/status/blob/gh-pages/assets/js/script.js
 
 The client side implementation for the status page can be found in [`script.js`]
-in the repository up on GitHub. Except from the asyncronous nature of JavaScript
-as well as the DOM manipulation necessary for adding new elemenets to a HTML
+in the repository up on GitHub. Except from the asynchronous nature of JavaScript
+as well as the DOM manipulation necessary for adding new elements to a HTML
 page; you should be able to see the familiarity with the above pseudocode.
 
 If you open up your dev tools on the status page you will see the two XHR
