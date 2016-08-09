@@ -1,12 +1,16 @@
-blog:
-    image: starefossen/github-pages
-    ports:
-        - "4000"
-    working_dir: /usr/src/app
-    volumes:
-        - .:/usr/src/app
-    command: jekyll serve --future --incremental --watch --force_polling -H 0.0.0.0 -P 4000
-    env_file: .env
-    environment:
-        - VIRTUAL_HOST=blog.starefossen.privat
-        - VIRTUAL_PORT=4000
+version: '2'
+
+services:
+  jekyll:
+      image: starefossen/github-pages
+      ports:
+          - "4000:4000"
+      network_mode: bridge
+      working_dir: /usr/src/app
+      volumes:
+          - .:/usr/src/app
+      command: jekyll serve --future -w --force_polling -H 0.0.0.0 -P 4000
+      env_file: .env
+      environment:
+          - VIRTUAL_HOST=blog.starefossen.privat
+          - VIRTUAL_PORT=4000

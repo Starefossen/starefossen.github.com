@@ -1,7 +1,7 @@
 <aside class="sidebar">
   <!-- resources -->
   <div>
-    <h3>Resources</h3>
+    {% unless page.nosidebar %}<h3>Resources</h3>{% endunless %}
     <ul class="list-inline">
     {% for p in site.pages %}
       {% if p.navigation %}
@@ -12,18 +12,29 @@
   </div>
 
   <!-- social -->
-  <div class="social">
-    <ul class="list-inline">
-    {% for s in site.social %}
-      <li>
-        <a href="{{ s.url }}">
-          <i class="fa fa-{{ s.icon }}"></i><br>{{ s.icon }}
-        </a>
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
+  {% unless page.nosidebar %}
+    <div class="social">
+      <ul class="list-inline">
+      {% for s in site.social %}
+        <li>
+          <a href="{{ s.url }}">
+            <i class="fa fa-{{ s.icon }}"></i><br>{{ s.icon }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  {% endunless %}
 
   <!-- github profile widget -->
-  <div class="github-card" data-github="starefossen" data-width="100%" data-height="317" data-theme="medium" style="margin-bottom: 20px;"></div>
+  {% unless page.nosidebar %}
+    <div
+      class="github-card"
+      data-github="starefossen"
+      data-width="100%"
+      data-height="317"
+      data-theme="medium"
+      style="margin-bottom: 20px;"
+    />
+  {% endunless %}
 </aside>
