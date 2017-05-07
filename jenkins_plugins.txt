@@ -1,0 +1,356 @@
+
+Enabled   
+Name  ↓
+Version   
+Previously installed version   
+Pinned   
+Uninstall   
+	
+Authentication Tokens API Plugin
+This plugin provides an API for converting credentials into authentication tokens in Jenkins.
+1.3			
+Uninstall
+	
+BlueOcean beta
+BlueOcean Aggregator
+1.0.0-b11			
+Uninstall
+	
+BlueOcean Display URL plugin
+This plugin generates BlueOcean specific URLs for the Display URL plugin.
+1.2			
+Uninstall
+	
+bouncycastle API Plugin
+Provides an stable API to Bouncy Castle related tasks. Plugins using Bouncy Castle should depend on this plugin and not directly on Bouncy Castle
+2.16.0			
+Uninstall
+	
+Branch API Plugin
+This plugin provides an API for multiple branch based projects.
+1.11.1			
+Uninstall
+	
+Credentials Plugin
+This plugin allows you to store credentials in Jenkins.
+2.1.8			
+Uninstall
+	
+Display URL API
+\\ Provides the DisplayURLProvider extension point to provide alternate URLs for use in notifications. URLs can be requested/extended for these UI locations: * Root page. * Job. * Run. * Run changes. * Test result.
+0.5			
+Uninstall
+	
+Docker Commons Plugin
+Provides the common shared functionality for various Docker-related plugins.
+1.5			
+Uninstall
+	
+Docker Pipeline
+Build and use Docker containers from pipelines.
+1.9			
+Uninstall
+	
+Durable Task Plugin
+Library offering an extension point for processes which can run outside of Jenkins yet be monitored.
+1.12			
+Uninstall
+	
+Favorite
+This plugin allows users to favorite a job.
+2.0.2			
+Uninstall
+	
+Folders Plugin
+This plugin allows users to create "folders" to organize jobs. Users can define custom taxonomies (like by project type, organization type etc). Folders are nestable and you can define views within folders. Maintained by CloudBees, Inc.
+5.13			
+Uninstall
+	
+Git client plugin
+Shared library plugin for other Git related Jenkins plugins.
+2.1.0			
+Uninstall
+	
+Git plugin
+This plugin integrates Git with Jenkins.
+3.0.0			
+Uninstall
+	
+GIT server Plugin
+Allows Jenkins to act as a Git server.
+1.7			
+Uninstall
+	
+GitHub API Plugin
+This plugin provides GitHub API for other plugins.
+1.79			
+Uninstall
+	
+GitHub Branch Source Plugin
+Multibranch projects and organization folders from GitHub. Maintained by CloudBees, Inc.
+1.10			
+Uninstall
+	
+GitHub plugin
+This plugin integrates GitHub to Jenkins.
+1.22.4			
+Uninstall
+	
+Icon Shim Plugin
+This plugin allows other Jenkins plugins to take advantage of the <l:icon> tag.
+2.0.3			
+Uninstall
+	
+Jackson 2 API Plugin
+This plugin exposes the Jackson 2 JSON APIs to other Jenkins plugins.
+2.7.3			
+Uninstall
+	
+Javadoc Plugin
+This plugin adds Javadoc support to Jenkins.
+1.4			
+Uninstall
+	
+JavaScript GUI Lib: ACE Editor bundle plugin
+JavaScript GUI Lib: ACE Editor bundle plugin.
+1.1			
+Uninstall
+	
+JavaScript GUI Lib: Handlebars bundle plugin
+JavaScript GUI Lib: Handlebars bundle plugin.
+1.1.1			
+Uninstall
+	
+JavaScript GUI Lib: jQuery bundles (jQuery and jQuery UI) plugin
+JavaScript GUI Lib: jQuery bundles (jQuery and jQuery UI) plugin.
+1.2.1			
+Uninstall
+	
+JavaScript GUI Lib: Moment.js bundle plugin
+JavaScript GUI Lib: Moment.js bundle plugin.
+1.1.1			
+Uninstall
+	
+JUnit Plugin
+Allows JUnit-format test results to be published.
+1.19			
+Uninstall
+	
+Kubernetes plugin
+This plugin allows slaves to be dynamically provisioned on multiple Docker hosts using Kubernetes.
+0.9			
+Uninstall
+	
+Mailer Plugin
+This plugin allows you to configure email notifications for build results. This is a break-out of the original core based email component.
+1.18			
+Uninstall
+	
+Matrix Project Plugin
+Multi-configuration (matrix) project type.
+1.7.1			
+Uninstall
+	
+Maven Integration plugin
+This plugin provides an advanced integration for Maven 2/3 projects.
+2.14			
+Uninstall
+	
+Metrics Plugin
+This plugin exposes the Metrics API to Jenkins plugins.
+3.1.2.9			
+Uninstall
+	
+Module :: BlueOcean :: Commons API
+This plugin is a part of Blue Ocean UI
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: Config
+BlueOcean Analytics Tools plugin
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: Dashboard
+Blue Ocean Dashboard
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: Events
+A new user experience for Jenkins
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: JWT module
+BlueOcean JWT plugin: Enables JWT based BlueOcean API authentication
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: Personalization
+Blue Ocean Personalization
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: Pipeline REST API implementation
+This plugin is a part of BlueOcean Plugin
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: REST API implementation
+This plugin is a part of Blue Ocean UI
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: Rest module
+This plugin is a part of Blue Ocean UI
+1.0.0-b11			
+Uninstall
+	
+Module :: BlueOcean :: Web module
+Blue Ocean core
+1.0.0-b11			
+Uninstall
+	
+Pipeline
+A suite of plugins that lets you orchestrate automation, simple or complex. See Pipeline as Code with Jenkins for more details.
+2.4			
+Uninstall
+	
+Pipeline Graph Analysis Plugin
+Provides a REST API to access pipeline and pipeline run data.
+1.2			
+Uninstall
+	
+Pipeline: API
+Plugin that defines Pipeline API.
+2.6			
+Uninstall
+	
+Pipeline: Basic Steps
+Commonly used steps for Pipelines.
+2.3			
+Uninstall
+	
+Pipeline: Build Step
+Adds the Pipeline step build to trigger builds of other jobs.
+2.3			
+Uninstall
+	
+Pipeline: Declarative Agent API
+Declarative Jenkins Pipelines
+0.5			
+Uninstall
+	
+Pipeline: Groovy
+Pipeline execution engine based on continuation passing style transformation of Groovy scripts.
+2.23			
+Uninstall
+	
+Pipeline: Input Step
+Adds the Pipeline step input to wait for human input or approval.
+2.5			
+Uninstall
+	
+Pipeline: Job
+Defines a new job type for pipelines and provides their generic user interface.
+2.8			
+Uninstall
+	
+Pipeline: Milestone Step
+Provides the milestone step in Pipeline scripts.
+1.1			
+Uninstall
+	
+Pipeline: Model API
+Declarative Jenkins Pipelines
+0.5			
+Uninstall
+	
+Pipeline: Model Definition
+Declarative Jenkins Pipelines
+0.5			
+Uninstall
+	
+Pipeline: Multibranch
+Enhances Pipeline plugin to handle branches better by automatically grouping builds from different branches.
+2.9.2			
+Uninstall
+	
+Pipeline: Nodes and Processes
+Pipeline steps locking agents and workspaces, and running external processes that may survive a Jenkins restart or slave reconnection.
+2.5			
+Uninstall
+	
+Pipeline: REST API Plugin
+Provides a REST API to access pipeline and pipeline run data.
+2.2			
+Uninstall
+	
+Pipeline: SCM Step
+Adds a Pipeline step to check out or update working sources from various SCMs (version control).
+2.2			
+Uninstall
+	
+Pipeline: Shared Groovy Libraries
+Shared libraries for Pipeline scripts.
+2.4			
+Uninstall
+	
+Pipeline: Stage Step
+Adds the Pipeline step stage to delineate portions of a build.
+2.2			
+Uninstall
+	
+Pipeline: Stage View Plugin
+Pipeline Stage View Plugin.
+2.2			
+Uninstall
+	
+Pipeline: Step API
+API for asynchronous build step primitive.
+2.5			
+Uninstall
+	
+Pipeline: Supporting APIs
+Common utility implementations to build Pipeline Plugin
+2.10			
+Uninstall
+	
+Plain Credentials Plugin
+Allows use of plain strings and files as credentials.
+1.3			
+Uninstall
+	
+SCM API Plugin
+This plugin provides a new enhanced API for interacting with SCM systems.
+1.3			
+Uninstall
+	
+Script Security Plugin
+Allows Jenkins administrators to control what in-process scripts can be run by less-privileged users.
+1.24			
+Uninstall
+	
+Server Sent Events (SSE) Gateway Plugin
+Server Sent Events (SSE) Gateway.
+1.10			
+Uninstall
+	
+SSH Credentials Plugin
+This plugin allows you to store SSH credentials in Jenkins.
+1.12			
+Uninstall
+	
+Structs Plugin
+Library plugin for DSL plugins that need names for Jenkins objects.
+1.5			
+Uninstall
+	
+Token Macro Plugin
+This plug-in adds reusable macro expansion capability for other plug-ins to use.
+2.0			
+Uninstall
+	
+Variant Plugin
+This user-invisible library plugin allows other multi-modal plugins to behave differently depending on where they run.
+1.0	
